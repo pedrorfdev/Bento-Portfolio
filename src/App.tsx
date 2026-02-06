@@ -6,7 +6,7 @@ import { TechStack } from "./components/TechStack";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { Sparkles } from "lucide-react";
 import { containerVariants, itemVariants } from './lib/framer';
-import { CVCard } from './components/CvCard';
+import { CVCard } from './components/CVCard';
 
 export function App() {
   return (
@@ -34,27 +34,58 @@ export function App() {
         </motion.section>
 
         <SocialCard platform="GitHub" href="https://github.com/pedrorfdev" />
+
         <StatusCard />
+
         <SocialCard platform="LinkedIn" href="https://linkedin.com/in/pedroff" />
+
         <CVCard />
 
         <TechStack />
 
         <ProjectCard
-          title="E-commerce Engine"
-          description="Desenvolvimento de uma API escalável com Node.js e integração de pagamentos, focada na redução do tempo de checkout em 15%."
-          tags={['Node.js', 'PostgreSQL', 'Stripe', 'Redis']}
-          link="https://demo.com"
+          title="OmniCommerce API"
+          pitch="Engine de e-commerce robusta com foco em gestão de produtos e performance de catálogo."
+          description="Desenvolvi uma infraestrutura de back-end escalável, priorizando a integridade dos dados e a rapidez nas consultas de inventário. Implementação de padrões de design para suportar grandes volumes de requisições."
+          tags={['Node.js', 'PostgreSQL', 'REST API', 'Docker']}
           github="https://github.com"
         />
 
         <ProjectCard
-          title="Finance Dashboard"
-          description="Interface analítica para gestão financeira pessoal com visualização de dados em tempo real utilizando gráficos complexos."
-          tags={['React', 'TypeScript', 'Tailwind v4', 'Chart.js']}
+          title="Titan Core API"
+          pitch="Sistema de alta disponibilidade com arquitetura modular e Injeção de Dependência."
+          description="Backend desenvolvido com NestJS sob os princípios do SOLID. O foco foi criar uma aplicação de fácil manutenção e testabilidade, simulando um ambiente de produção corporativo de alto nível."
+          tags={['NestJS', 'TypeScript', 'Jest', 'Clean Architecture']}
+          github="https://github.com"
+        />
+
+        <ProjectCard
+          title="MoneyFlow"
+          pitch="Aplicação de gestão financeira com persistência de dados e controle de transações."
+          description="Uma ferramenta para controle de fluxo de caixa que utiliza gerenciamento de estado global para cálculos em tempo real. Implementei persistência de dados local para garantir que a experiência do usuário seja contínua e resiliente a recarregamentos."
+          tags={['React', 'Styled Components', 'Context API', 'Local Storage Persistence']}
           link="https://demo2.com"
           github="https://github.com"
         />
+
+        <ProjectCard
+          title="Modern Arq Portfolio"
+          pitch="Plataforma institucional multi-página para arquitetura, com foco em navegação fluida e design minimalista."
+          description="Desenvolvi uma experiência completa de navegação para escritórios de arquitetura. O projeto foca em arquitetura de informação e layouts responsivos complexos, garantindo uma presença digital sólida e elegante."
+          tags={['React', 'Tailwind CSS', 'Multi-page Navigation', 'Performance']}
+          link="https://demo2.com"
+          github="https://github.com"
+        />
+
+        <ProjectCard
+          title="Bento Portfolio v2"
+          pitch="Experiência imersiva em Bento Grid com animações coreografadas e Dark Mode."
+          description="Meu cartão de visitas técnico. Utilizei as tecnologias mais recentes do ecossistema React para criar uma interface que equilibra estética, performance e acessibilidade."
+          tags={['React', 'Tailwind v4', 'Framer Motion', 'TypeScript']}
+          link="https://demo2.com"
+          github="https://github.com"
+        />
+
       </main>
     </motion.div>
   )
