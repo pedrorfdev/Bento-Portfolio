@@ -5,11 +5,11 @@ import { FileText, Download } from 'lucide-react';
 export function CVCard() {
   return (
     <motion.a
-      href="/Curriculo-Pedro-Ferreira-Software-Engineer"
+      href="/Curriculo-Pedro-Ferreira-Software-Engineer.pdf"
       target="_blank"
       variants={itemVariants}
       whileHover={{ y: -5 }}
-      className="group relative p-6 rounded-3xl bg-card-bg border border-border-main flex flex-col justify-between overflow-hidden transition-all duration-300 cursor-pointer"
+      className="group relative p-6 rounded-3xl bg-card-bg border border-border-main flex flex-col justify-between overflow-hidden transition-colors duration-300 cursor-pointer"
     >
 
       <div className="absolute inset-0 bg-accent-main/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -29,10 +29,10 @@ export function CVCard() {
 
         <div className="relative h-4 overflow-hidden">
           <p className="text-text-muted text-xs font-medium absolute transition-all duration-300 group-hover:-translate-y-full">
-            Visualizar PDF
+            Ver Currículo (PDF)
           </p>
           <p className="text-accent-main text-xs font-bold absolute translate-y-full transition-all duration-300 group-hover:translate-y-0 uppercase tracking-wider">
-            Download CV
+            Abrir em nova aba
           </p>
         </div>
       </div>
