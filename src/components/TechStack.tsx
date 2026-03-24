@@ -26,7 +26,7 @@ export function TechStack() {
             Sistemas
           </h4>
           <ul className="text-sm space-y-2 text-text-muted">
-            <li>Node.js & Fastify</li>
+            <li>Node.js & NestJs</li>
             <li>PostgreSQL / NoSQL</li>
             <li>Arquitetura de APIs</li>
           </ul>

@@ -5,7 +5,7 @@ import { FileText, Download } from 'lucide-react';
 export function CVCard() {
   return (
     <motion.a
-      href="/Curriculo-Pedro-Ferreira-Software-Engineer.pdf"
+      href="/Pedro-Ferreira-Software-Engineer.pdf"
       target="_blank"
       variants={itemVariants}
       whileHover={{ y: -5 }}
